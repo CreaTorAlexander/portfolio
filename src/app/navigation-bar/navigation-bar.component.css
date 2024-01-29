@@ -3,7 +3,8 @@
 
 .navbar {
     padding: 10px;
-    margin: 5vh;
+    margin: 4vh;
+    margin-top: 1vh;
     border-radius: 10px; /* Add rounded corners *justify-content: space-between; /* Align items at each end of the navbar */
     justify-content: space-between; /* Align items at each end of the navbar */
     align-items: center; /* Vertically center items in the navbar */
@@ -31,6 +32,9 @@
   a:hover {
     text-decoration: underline;
     font-weight: bold;
+    background-color: rgba(105, 179, 162, 0.7);
+    border-radius: 10px;
+
   }
 
   a:active {

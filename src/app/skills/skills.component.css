@@ -1,0 +1,14 @@
+.container {
+    margin: 10vh;
+    margin-left: 20%;
+    display: flex;
+    height: 80vh;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    text-align: center;   
+    border-color: #999999; /* Dark blue with transparency (adjust the last value for transparency) */
+    color: #fff; /* White text */
+    border-radius: 10px; /* Add rounded corners */
+    max-height: 80vh;
+
+}
