@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    height: 80vh;
+    overflow-y: auto; /* Enable vertical scrolling when the content exceeds the container height */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.left-part {
+    font-family: 'Futura', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    width: 50%;
+    background-color: #999999; /* Dark blue with transparency (adjust the last value for transparency) */
+    color: #fff; /* White text */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-family: 'Futura', sans-serif;
+
+}
+
+.personal-information {
+    margin-top: 20px; /* Adjust the top margin for spacing */
+    margin: 10%;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height for better readability */
+  }
+
+.social-media {
+    margin-top: auto; /* Move social media icons to the bottom */
+    margin-bottom: 20px; /* Remove bottom margin */
+
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px; /* Adjust the size of the social media icons */
+    height: 30px;
+}
+
+.right-part {
+    flex: 1;
+    border-radius: 10px; /* Add rounded corners */
+    background-image: url('../../assets/black-white-portfolio.jpeg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    border-radius: 10px; /* Add rounded corners if desired */
+}

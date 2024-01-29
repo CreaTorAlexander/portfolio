@@ -1,21 +1,38 @@
 /* navbar.component.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .navbar {
-    background-color: #333;
     padding: 10px;
+    margin: 5vh;
+    border-radius: 10px; /* Add rounded corners *justify-content: space-between; /* Align items at each end of the navbar */
+    justify-content: space-between; /* Align items at each end of the navbar */
+    align-items: center; /* Vertically center items in the navbar */
+    border-bottom: solid 4px #999999; /* Add a solid underline with a specified color */
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+
   }
-  
   ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    display: flex;
+    margin: 0;
   }
   
   li {
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 100px;
   }
   
   a {
     text-decoration: none;
-    color: white;
+    color: #999999;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  a:active {
+      font-weight: bold;
   }
