@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3vh;
+  }
+  
+  .image-container {
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    display: block; /* Ensure that it's set to block or another appropriate display value */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999; /* Adjust as needed */
+
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: 20vh;
+    background-color: white;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Align text in the center */
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between; /* Adjust to space content within the container */
+    font-size: large;
+
+}
+
+
+  .close {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .social-media {
+    margin-bottom: 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}

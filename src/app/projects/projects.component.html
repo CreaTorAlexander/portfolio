@@ -1,1 +1,22 @@
-<p>projects works!</p>
+<!-- image-gallery.component.html -->
+
+<div class="gallery">
+    <div *ngFor="let image of images" class="image-container">
+      <img [src]="image.url" alt="{{ image.alt }}" (click)="openModal(image)">
+    </div>
+  
+    <div class="modal" *ngIf="modalOpen">
+      <div class="modal-content">
+          <h2>{{ selectedImage.alt }}</h2>
+          <div class="description">
+            <p>{{selectedImage.description}}</p>
+          </div>
+            <div class="social-media">
+                <a href={{selectedImage.github}} target="_blank">
+                    <img class="github-logo" src="../../assets/icons-social-media/github.svg" alt="GitHub">
+                </a>
+            </div>
+        <span class="close" (click)="closeModal()">&times;</span>
+      </div>
+    </div>
+  </div>
